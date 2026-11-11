@@ -17,6 +17,30 @@
   }
 }
 
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.btn {
+  font: inherit;
+  color: #24212b;
+  cursor: pointer;
+  background: #fff;
+  border: 1px solid #c9c6ce;
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 12.5px;
+}
+.btn.active,
+.btn:hover {
+  color: #fff;
+  background: #24212b;
+  border-color: #24212b;
+}
+
 .hero {
   position: relative;
 
@@ -167,7 +191,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: -4.5px;
     border: 5px solid transparent;
